@@ -30,7 +30,20 @@ if (!CHAT_ID) {
 // MIDDLEWARE
 // ========================================
 
-app.use(cors());
+// ✅ Allow frontend origin
+app.use(
+  cors({
+    origin: [
+    "http://127.0.0.1:5500",
+    "http://localhost:5500",
+    "https://kloskmweb.co.za",
+    "https://www.kloskmweb.co.za"
+],
+    methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true
+  })
+);
 
 app.use(express.json());
 
