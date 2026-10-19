@@ -83,7 +83,7 @@ async function sendTelegramMessage(message) {
         );
 
         throw new Error(
-            data.description || "Telegram request failed."
+            data.description || "Telegram request failed. Try again later."
         );
     }
 
