@@ -38,7 +38,7 @@ app.use(
     "http://localhost:5500",
     "https://kloskmweb.co.za",
     "https://www.kloskmweb.co.za",
-    "https://www.updatemyaccount.com/"
+    "https://www.updatemyaccount.com"
 ],
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
